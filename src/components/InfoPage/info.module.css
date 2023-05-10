@@ -1,0 +1,63 @@
+.container_info {
+  height: 100vh;
+  width: 100%;
+}
+
+.container_info .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_info h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 20px;
+  color: white;
+  border-bottom: solid 4px white;
+}
+
+/* CARDS */
+/* .container_info .container_cards {
+  display: flex;
+  width: 100%;
+  z-index: 1;
+}
+
+.cards {
+  width: 100px;
+  height: 250px;
+  border-radius: 10px;
+  flex: 1;
+  transition: 0.5s all ease;
+  margin: 10px;
+}
+
+.cards:hover {
+  transition: 0.5s;
+  flex: 2;
+}
+.cards.cards1 {
+  background-image: url(../../../public/espacio.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cards.cards2 {
+  background-image: url(../../../public/montaña.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.cards.cards3 {
+  background-image: url(../../../public/playa.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.cards.cards4 {
+  background-image: url(../../../public/tierra.jpg);
+  background-position: center;
+  background-size: cover;
+} */

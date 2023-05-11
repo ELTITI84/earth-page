@@ -4,9 +4,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-color: black;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+p {
+  font-family: sans-serif;
 }
 
 ::-webkit-scrollbar {

@@ -19,6 +19,28 @@
   border-bottom: solid 4px white;
 }
 
+/* SWIPER */
+
+.container_swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_swiper .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container_img {
+  height: 500px;
+  width: 800px;
+}
+
 /* CARDS */
 /* .container_info .container_cards {
   display: flex;

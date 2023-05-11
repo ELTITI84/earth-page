@@ -66,7 +66,7 @@ const Nav = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav)
-    window.scrollTo({ top: 0 })
+    window.scrollTo({ top: 0, behavior: "smooth" })
   }, [])
 
   const handleActive = () => {

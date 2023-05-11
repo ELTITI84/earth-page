@@ -11,7 +11,7 @@ const Info = () => {
     <>
       <div className={styles.container_info}>
         <div className={styles.info}>
-          <h1>INFO</h1>
+          <h1 id="info">INFO</h1>
         </div>
       </div>
     </>

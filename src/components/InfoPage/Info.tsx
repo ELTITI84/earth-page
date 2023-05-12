@@ -63,6 +63,7 @@ const Info = () => {
                       alt=""
                     ></Image>
                   </div>
+                  <div className={styles.text}>{text}</div>
                 </SwiperSlide>
               )
             })}

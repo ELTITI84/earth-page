@@ -73,6 +73,8 @@ const Nav = () => {
     setActive(active === "" ? `${styles.open}` : "")
   }
 
+  const handleRedirect = () => {}
+
   return (
     <>
       <header
@@ -95,6 +97,7 @@ const Nav = () => {
               onClick={handleActive}
               className={["ri-menu-line", active].join(" ")}
             ></i>
+            <i className={["ri-account-circle-line", active]}></i>
           </div>
         </nav>
       </header>

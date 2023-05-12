@@ -41,6 +41,10 @@
   width: 800px;
 }
 
+.text {
+  color: white;
+}
+
 /* CARDS */
 /* .container_info .container_cards {
   display: flex;

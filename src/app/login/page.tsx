@@ -10,6 +10,10 @@ const Login = () => {
     setActive(active === "" ? `${styles.right_panel_active}` : "")
   }
 
+  const handleRedirect = () => {
+    window.location.pathname = "/"
+  }
+
   return (
     <div className={styles.container_login_page}>
       <div
@@ -62,7 +66,7 @@ const Login = () => {
                 <a href="#">Forgot password?</a>
               </div>
             </div>
-            <button>Login</button>
+            <button onClick={handleRedirect}>Login</button>
             <span>or use your account</span>
             <div className={styles.social_container}>
               <a href="#" className={styles.social}>

@@ -38,14 +38,27 @@
 
 .container_img {
   height: 500px;
-  width: 800px;
+  width: 500px;
+}
+
+.title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: sans-serif;
 }
 
 .text {
   color: white;
+  font-size: 40px;
+  text-align: center;
 }
 
 /* CARDS */
+
 /* .container_info .container_cards {
   display: flex;
   width: 100%;

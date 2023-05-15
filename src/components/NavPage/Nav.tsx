@@ -73,6 +73,10 @@ const Nav = () => {
     setActive(active === "" ? `${styles.open}` : "")
   }
 
+  const handleRedirect = () => {
+    window.location.href = "login"
+  }
+
   return (
     <>
       <header
@@ -90,11 +94,19 @@ const Nav = () => {
               )
             })}
           </ul>
-          <div className={styles.icon}>
-            <i
-              onClick={handleActive}
-              className={["ri-menu-line", active].join(" ")}
-            ></i>
+          <div className={styles.icons}>
+            <div className={styles.menu}>
+              <i
+                onClick={handleActive}
+                className={["ri-menu-line", active].join(" ")}
+              ></i>
+            </div>
+            <div className={styles.profile}>
+              <i
+                onClick={handleRedirect}
+                className="ri-account-circle-line"
+              ></i>
+            </div>
           </div>
         </nav>
       </header>

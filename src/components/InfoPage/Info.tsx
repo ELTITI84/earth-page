@@ -2,12 +2,16 @@
 
 import React from "react"
 import styles from "./info.module.css"
-import Space from "../../../public/espacio.jpg"
-import Earth from "../../../public/tierra.jpg"
-import Mountain from "../../../public/montaña.jpg"
-import Beach from "../../../public/playa.jpg"
-import Moon from "../../../public/moon.jpg"
-import Sun from "../../../public/sun.jpg"
+import Moon from "../../../public/Moon-PNG.png"
+import Sun from "../../../public/Sun-PNG.png"
+import Saturn from "../../../public/Saturno.png"
+import Mercury from "../../../public/Mercury-PNG.png"
+import Mars from "../../../public/Mars-PNG.png"
+import Earth from "../../../public/Earth-PNG.png"
+import Jupiter from "../../../public/Jupiter-PNG.png"
+import Venus from "../../../public/Venus-PNG.png"
+import Uranus from "../../../public/Urano.png"
+import Neptune from "../../../public/Neptune-PNG.png"
 import Card from "./Card"
 import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -16,17 +20,49 @@ import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
 import { EffectCoverflow, Pagination } from "swiper"
 import { identifierToKeywordKind } from "typescript"
+import { title } from "process"
 
 const Info = () => {
   const imgs = [
     {
       id: 1,
-      imagenes: Moon,
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, minima fuga explicabo magni eum odit, voluptate beatae voluptas a numquam itaque dolore quos, ea ipsum eius ullam deleniti harum quod!",
+      imagenes: Sun,
+      title: "Sun",
     },
     {
       id: 2,
-      imagenes: Sun,
+      imagenes: Mercury,
+      title: "Mercury",
+    },
+    {
+      id: 3,
+      imagenes: Venus,
+      title: "Venus",
+    },
+    {
+      id: 5,
+      imagenes: Earth,
+      title: "Earth",
+    },
+    {
+      id: 6,
+      imagenes: Mars,
+      title: "Mars",
+    },
+    {
+      id: 7,
+      imagenes: Jupiter,
+      title: "Jupiter",
+    },
+    {
+      id: 9,
+      imagenes: Uranus,
+      title: "Uranus",
+    },
+    {
+      id: 10,
+      imagenes: Neptune,
+      title: "Neptune",
     },
   ]
 
@@ -53,7 +89,7 @@ const Info = () => {
             modules={[EffectCoverflow, Pagination]}
             className="mySwiper"
           >
-            {imgs.map(({ id, imagenes, text }) => {
+            {imgs.map(({ id, imagenes, title }) => {
               return (
                 <SwiperSlide key={id}>
                   <div className={styles.slide}>
@@ -63,6 +99,7 @@ const Info = () => {
                       alt=""
                     ></Image>
                   </div>
+                  <div className={styles.text}>{title}</div>
                 </SwiperSlide>
               )
             })}

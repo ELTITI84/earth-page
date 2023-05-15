@@ -224,8 +224,8 @@ button.ghost:hover i.login {
 }
 
 .overlay {
-  background-image: url("../../public/agua.gif");
   background-repeat: no-repeat;
+  background-image: url(../../../public/earthgif.gif);
   background-size: cover;
   background-position: 0 0;
   color: #fff;

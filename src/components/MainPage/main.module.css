@@ -118,3 +118,12 @@
 .container_text button:hover .button_text {
   color: #fff;
 }
+
+.square1 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+}

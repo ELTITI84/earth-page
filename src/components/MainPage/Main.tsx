@@ -1,5 +1,8 @@
+"use client"
+
 import React from "react"
 import styles from "./main.module.css"
+import { motion } from "framer-motion"
 
 const Main = () => {
   return (
@@ -20,6 +23,14 @@ const Main = () => {
             <span className={styles.button_text}>Learn More</span>
           </button>
         </div>
+        <motion.div
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+          }}
+          className={styles.square1}
+        ></motion.div>
       </main>
     </>
   )

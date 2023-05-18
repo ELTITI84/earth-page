@@ -5,6 +5,8 @@ import styles from "./nav.module.css"
 import Link from "next/link"
 import "remixicon/fonts/remixicon.css"
 import { useRouter } from "next/router"
+import { text } from "stream/consumers"
+import { motion } from "framer-motion"
 
 const Nav = () => {
   const navlist = [
@@ -51,6 +53,11 @@ const Nav = () => {
       title: "Link 4",
       link: "#",
     },
+    {
+      id: 5,
+      title: "Link 5",
+      link: "#",
+    },
   ]
 
   const [active, setActive] = useState("")
@@ -89,7 +96,6 @@ const Nav = () => {
               return (
                 <li className={styles.item_list} key={id}>
                   <Link href={link}>{title}</Link>
-                  <div className={styles.line}></div>
                 </li>
               )
             })}
@@ -110,13 +116,17 @@ const Nav = () => {
           </div>
         </nav>
       </header>
+
       <aside className={[`${styles.container_aside}`, `${active}`].join(" ")}>
         <div className={styles.container_menu_aside}>
           <ul className={styles.container_list_aside}>
             {menulist.map(({ id, title, link }) => {
               return (
                 <li className={styles.menu_items} key={id}>
-                  <Link href={link}>{title}</Link>
+                  <div className={styles.circle}></div>
+                  <div className={styles.square}>
+                    <Link href={link}>{title}</Link>
+                  </div>
                 </li>
               )
             })}
